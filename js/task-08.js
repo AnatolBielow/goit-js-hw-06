@@ -8,7 +8,9 @@ function checkingForm(event) {
         elements: {email, password} 
     } = event.currentTarget;
     if (email.value === "" || password.value === "") {
-        return alert('Please fill in all blanks')
+        alert('Please fill in all blanks');
+        event.currentTarget.reset();
+        return;
     }
     const user = {
         email: email.value,

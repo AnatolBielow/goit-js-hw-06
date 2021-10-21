@@ -3,7 +3,7 @@ const inputSymbolsLen = input.getAttribute('data-length');
 
 
 input.addEventListener('blur', () => {
-    if (input.value.length == inputSymbolsLen){
+    if (input.value.length === Number(inputSymbolsLen)){
        input.classList.add('valid')
        input.classList.remove('invalid');
        console.log("valid");
